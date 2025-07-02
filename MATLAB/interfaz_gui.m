@@ -1,5 +1,5 @@
 % GUI Mejorada para Experimento de Caída Libre
-function gui_caida_librev7()
+function interfaz_gui()
     % Crear figura principal
     f = figure('Name','Experimento Caída Libre','Position',[100 100 1000 600]);
     
@@ -326,7 +326,7 @@ end
         end
 
         % Ruta completa al script Python (AJUSTAR según tu carpeta)
-        rutaPython = 'D:/Tareas USFX/2024/Ing. Electronica/ProyectoFinal Caida libre/matlab/reconocer_comando.py';
+        rutaPython = '\reconocer_comando.py';
 
         % Ejecutar script Python para reconocimiento
         cmdPython = sprintf('python "%s" "%s"', rutaPython, archivoAudio);
@@ -364,7 +364,7 @@ end
         end
     end
 function resultado = reconocimientoFacial()
-    rutaPythonScript = 'D:\Tareas USFX\2024\Ing. Electronica\ProyectoFinal Caida libre\Matlab\reconocer_rostrov2.py';
+    rutaPythonScript = '\reconocer_rostrov2.py';
     
     comando = sprintf('python "%s"', rutaPythonScript);
     [status, output] = system(comando);

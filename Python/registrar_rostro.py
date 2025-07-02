@@ -1,4 +1,4 @@
-import face_recognition
+mport face_recognition
 import cv2
 import pickle
 import sys

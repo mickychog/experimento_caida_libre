@@ -5,7 +5,7 @@ import pickle
 import sys
 
 # Cargar todos los embeddings y nombres
-with open("D:\\Tareas USFX\\2024\Ing. Electronica\ProyectoFinal Caida libre\embeddings.pkl", "rb") as f:
+with open("\embeddings.pkl", "rb") as f:
     data = pickle.load(f)  # {'Juan': encoding1, 'Maria': encoding2, ...}
 
 known_names = list(data.keys())
